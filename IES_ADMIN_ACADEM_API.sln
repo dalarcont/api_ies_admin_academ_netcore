@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IES_ADMIN_ACADEM_API", "IES_ADMIN_ACADEM_API.csproj", "{828E6F0F-9892-419A-A16B-7E94E7BFEFDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{828E6F0F-9892-419A-A16B-7E94E7BFEFDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{828E6F0F-9892-419A-A16B-7E94E7BFEFDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{828E6F0F-9892-419A-A16B-7E94E7BFEFDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{828E6F0F-9892-419A-A16B-7E94E7BFEFDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9839FBB2-D5E9-44D2-A792-5317A83B3EC4}
+	EndGlobalSection
+EndGlobal

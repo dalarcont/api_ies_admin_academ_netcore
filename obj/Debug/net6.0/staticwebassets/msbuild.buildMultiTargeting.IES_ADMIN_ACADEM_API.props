@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IES_ADMIN_ACADEM_API.props" />
+</Project>

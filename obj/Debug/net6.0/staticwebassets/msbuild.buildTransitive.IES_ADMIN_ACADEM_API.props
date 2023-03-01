@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\IES_ADMIN_ACADEM_API.props" />
+</Project>
