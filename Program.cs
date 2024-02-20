@@ -1,25 +1,35 @@
-var builder = WebApplication.CreateBuilder(args);
+using IES_ADMIN_ACADEM_API.Entities;
 
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+    var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
+    // Add services to the container.
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    builder.Services.AddControllers();
+    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+    //Prevent model classes object received by endpoints to throw 'the field is required'
+    // but don't forget that this supresses all required annotations for all memberrs. 
+    builder.Services.AddControllers(options => options.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
+    builder.Services.AddControllersWithViews().AddNewtonsoftJson();
+    builder.Services.AddEndpointsApiExplorer(); //UNCOMMENT FOR SWAGGER
+    builder.Services.AddSwaggerGen(); //UNCOMMENT FOR SWAGGER
 
-app.UseHttpsRedirection();
 
-app.UseAuthorization();
+    var app = builder.Build();
 
-app.MapControllers();
+    // Configure the HTTP request pipeline.
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger(); //UNCOMMENT FOR SWAGGER
+        app.UseSwaggerUI(); //UNCOMMENT FOR SWAGGER
+    }
 
-app.Run();
+//app.UseHttpsRedirection();
+
+    app.UseAuthorization();
+
+    app.MapControllers();
+
+    app.Run();
+
+
