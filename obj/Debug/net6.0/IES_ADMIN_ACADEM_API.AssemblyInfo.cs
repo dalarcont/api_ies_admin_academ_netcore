@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IES_ADMIN_ACADEM_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e8f0f5b770b644a30245c2326343ee1814e3460")]
 [assembly: System.Reflection.AssemblyProductAttribute("IES_ADMIN_ACADEM_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IES_ADMIN_ACADEM_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]
